@@ -30,4 +30,6 @@
 
 15. mv [[:upper:]]* /tmp/u -*Creates a script that moves all files beginning with an uppercase letter.
 
-16. rm *~ - *Create a script that deletes all files in the current working directory. 
+16. rm *~ - *Create a script that deletes all files in the current working directory.
+
+17. mkdir -p welcome/to/school - Create a script that creates the directories welcome/, welcome/to/ and welcome/to/school in the current directory. 
