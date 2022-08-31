@@ -10,6 +10,7 @@ mv /tmp/betty /tmp/my_first_directory - Move the file betty from /tmp/ to /tmp/m
 rm -r /tmp/my_first_directory/betty - Delete the file betty.
 rm -r /tmp/my_first_director
 y - Delete the directory my_first_directory that is in the /tmp directory.
-"cd -" - Changes the working directory to the previous one
-.
+"cd -" - Changes the working directory to the previous one.
 ls -al . .. /boot -  Lists all files (even ones with names beginning with a period character, which are normally hidden) in the current directory and the parent of the working directory and the /boot directory (in this order), in long format.
+file /tmp/iamafile - Prints the type of the file named iamafile. The file iamafile will be in the /tmp directory.
+
