@@ -3,4 +3,4 @@
 
 2. id -un - the command prints the username of the current user.
 
-3. getent group - this command prints all groups that the user is part of.
+3. groups - this command prints all groups that the user is part of.
