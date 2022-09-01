@@ -1,16 +1,19 @@
  Shell permissions
-1. su [username] - this command is used to change current user to a specific user.
-2. id -un - the command prints the username of the current user.
+0. su [username] - this command is used to change current user to a specific user.
 
-3. groups - this command prints all groups that the user is part of.
+1. id -un - the command prints the username of the current user.
 
-4. chown [user] [file]  - changes file onwer. 
+2. groups - this command prints all groups that the user is part of.
 
-5. touch - this command creates a empty file.
+3. chown [user] [file]  - changes file onwer. 
 
-6. chmod u=rwx [filename] - this comands adds execute permission of a file to the user. 
+4. touch - this command creates a empty file.
 
-7. chmod ug=x,o+r [filename] - this command adds execute permission of a file to both user and group.
+5. chmod u=rwx [filename] - this comands adds execute permission of a file to the user. 
+
+6. chmod ug+x,o+r [filename] - this command adds execute permission of a file to both user and group.
+
+7. chmod a+x hello - 
 
 8. chmod 007 hello -a script that sets the permission to the file hello.
 
