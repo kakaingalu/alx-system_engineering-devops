@@ -4,4 +4,4 @@
 
 3. groups - this command prints all groups that the user is part of.
 
-4. chown [user] /[file]  - changes file onwer.  
+4. chown [user] [file]  - changes file onwer.  
