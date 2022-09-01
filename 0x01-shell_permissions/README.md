@@ -10,4 +10,4 @@
 
 6. chmod u=rwx [filename] - this comands adds execute permission of a file to the user. 
 
-7. chmod ug=rwx [filename] - this command adds execute permission of a file to both user and group.
+7. chmod ug=x,o+r [filename] - this command adds execute permission of a file to both user and group.
