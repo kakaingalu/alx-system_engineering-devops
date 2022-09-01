@@ -6,4 +6,6 @@
 
 4. chown [user] [file]  - changes file onwer. 
 
-5. touch - this command creates a empty file. 
+5. touch - this command creates a empty file.
+
+6. chmod u+x [filename] - this comands adds excute permission of a file to the user. 
