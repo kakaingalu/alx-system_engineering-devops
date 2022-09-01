@@ -26,3 +26,11 @@
 12. mkdir -m 751 dir_school - a script that creates a directory called my_dir with permissions 751 in the working directory.
 
 13. chgrp school hello - a script that changes the group owner to school for the file hello.
+
+14. chown vincent:staff - a script that changes the owner to vincent and the group owner to staff for all the files and directories in the working directory.
+
+15.* chown -h vincent:staff _hello - *a script that changes the owner to vincent and the group owner to staff for all the files and directories in the working directory. 
+
+16. chown -from=guillaume betty hello - Write a script that changes the owner of the file hello to betty only if it is owned by the user guillaume.
+
+17. telnet towel.blinkenlights.nl - Write a script that will play the StarWars IV episode in the terminal.
