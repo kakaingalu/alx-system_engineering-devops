@@ -8,4 +8,6 @@
 
 5. touch - this command creates a empty file.
 
-6. chmod u=rwx [filename] - this comands adds excute permission of a file to the user. 
+6. chmod u=rwx [filename] - this comands adds execute permission of a file to the user. 
+
+7. chmod ug=rwx [filename] - this command adds execute permission of a file to both user and group.
