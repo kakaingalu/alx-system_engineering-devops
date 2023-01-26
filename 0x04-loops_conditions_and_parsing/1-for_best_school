@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-for i in {1..10};
-do
+#a Bash script that displays Best School 10 times.
+for i in {1..10};do
 	echo "Best School"
 done
