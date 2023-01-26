@@ -11,7 +11,7 @@
 # 		if the file is a regular file: school is a regular file
 #		if the file is not a regular file: (nothing)
 
-file="./school"
+file="school"
 
 if [[ -e "$file" ]];
 then
