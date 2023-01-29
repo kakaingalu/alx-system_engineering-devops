@@ -5,4 +5,4 @@ i#!/usr/bin/env bash
 #+  code of each log, in sorted order.
 
 myfile="apache-access.log"
-awk -F' ' '{ print $1, $9}' $myfile | sort | uniq -c|sort -nrr
+awk -F' ' '{ print $1, $9}' $myfile | sort | uniq -c|sort -nr
