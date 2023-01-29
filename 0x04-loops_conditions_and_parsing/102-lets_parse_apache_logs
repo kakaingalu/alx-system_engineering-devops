@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 # A Bash script that displays the visitor IP along with the HTTP status code from the Apache log file.
-
-awk -f '{ print $1, $9 }' "apache-access.log"
+apache="apache-access.log"
+awk -f'' '{ print $1, $9 }' $apache
