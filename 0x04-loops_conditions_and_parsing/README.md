@@ -4,12 +4,12 @@
 Introduction to loops, conditions and parsing 
 
 # General
-`How to create SSH keys <br>
-`What is the advantage of using <code> #!/usr/bin/env bash over #!/bin/bash </code> <br>
-`How to use while, until and for loops <br>
-`How to use if, else, elif and case condition statements <br>
-`How to use the cut command <br>
-`What are files and other comparison operators, and how to use them <br>
+`How to create SSH keys` <br>
+`What is the advantage of using` <code> #!/usr/bin/env bash over #!/bin/bash </code> <br>
+`How to use while, until and for loops` <br>
+`How to use if, else, elif and case condition statements` <br>
+`How to use the cut command` <br>
+`What are files and other comparison operators, and how to use them` <br>
 
 # Requirements
 
