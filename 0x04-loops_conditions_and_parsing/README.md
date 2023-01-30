@@ -14,15 +14,15 @@ Introduction to loops, conditions and parsing
 # Requirements
 
 # General
-<li> Allowed editors: vi, vim, emacs <li>
-<li> All your files will be interpreted on Ubuntu 20.04 LTS <li>
-<li> All your files should end with a new line <li>
-<li> A README.md file, at the root of the folder of the project, is mandatory <li>
-<li> All your Bash script files must be executable <li>
-<li> You are not allowed to use awk <li>
-<li> Your Bash script must pass Shellcheck (version 0.7.0) without any error <li>
-<li> The first line of all your Bash scripts should be exactly `#!/usr/bin/env bash` <li>
-<li> The second line of all your Bash scripts should be a comment explaining what is the script doing <li>
+<li> Allowed editors: vi, vim, emacs 
+<li> All your files will be interpreted on Ubuntu 20.04 LTS 
+<li> All your files should end with a new line 
+<li> A README.md file, at the root of the folder of the project, is mandatory 
+<li> All your Bash script files must be executable 
+<li> You are not allowed to use awk 
+<li> Your Bash script must pass Shellcheck (version 0.7.0) without any error
+<li> The first line of all your Bash scripts should be exactly `#!/usr/bin/env bash` 
+<li> The second line of all your Bash scripts should be a comment explaining what is the script doing 
 
 # Copyright - Plagiarism
 `You are tasked to come up with solutions for the tasks below yourself to meet with the above learning objectives.
