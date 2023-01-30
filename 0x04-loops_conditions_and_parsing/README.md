@@ -41,6 +41,5 @@ Introduction to loops, conditions and parsing
 # Table of contents
 File |       | Description
 -----|-------|------------
-<ol type="1"> 
-<li> [0-RSA_public_key.pub](./0-RSA_public_key.pub) | [0-RSA_public_key](./0-RSA_public_key) | Create a RSA key pair. </li>
+[0-RSA_public_key.pub](./0-RSA_public_key.pub) | [0-RSA_public_key](./0-RSA_public_key) | Create a RSA key pair.
 
