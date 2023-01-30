@@ -39,7 +39,8 @@ Introduction to loops, conditions and parsing
 <li> Shellcheck is available on the schools computers. If you want to use it on your own computer, here is how to install it.</li>
 
 # Table of contents
-File | Description
------|------------
-[0-RSA_public_key.pub](./0-RSA_public_key.pub) | Create a RSA key pair.
+File |       | Description
+-----|-------|------------
+<ol type="1"> 
+<li> [0-RSA_public_key.pub](./0-RSA_public_key.pub) | [0-RSA_public_key](./0-RSA_public_key) | Create a RSA key pair. </li>
 
