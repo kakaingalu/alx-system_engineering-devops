@@ -10,7 +10,9 @@ Directories | Description
 [0x01-shell_permissions](./0x01-shell_permisisons) | Introduction to shell basics.
 [0x02-shell_redirections](./0x02-shell_redirections) | Introduction to shell redirections.
 [0x03-shell_variables_expansions](./0x03-shell_variablles_expansions) | introduction to variable and expansion.
-
+[0x04-loops_conditions_and_parsing](./0x04-loops_conditions_and_parsing) | Introduction loops condition and parsing.
+[0x05-processes_and_signals](./0x05-processes_and_signals) | Introduction to processes and signals
+[command_line_for_the_win](./command_line_for_the_win) | Testing of shell/bash skills.
 # Author
 Joseph Kakai
 
