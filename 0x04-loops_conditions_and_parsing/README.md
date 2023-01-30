@@ -39,8 +39,8 @@ Introduction to loops, conditions and parsing
 <li> Shellcheck is available on the schools computers. If you want to use it on your own computer, here is how to install it.</li>
 
 # Table of contents
-File |       | Description
------|-------|------------
+File    |           | Description
+--------|-----------|----------------
 [0-RSA_public_key.pub](./0-RSA_public_key.pub) | [0-RSA_public_key](./0-RSA_public_key) | Creates a RSA key pair.
 [1-for_best_school](./1-for_best_school) | | A Bash script that displays Best School 10 times.
 [2-while_best_school](./2-while_best_school) | | A Bash script that displays Best School 10 times.
