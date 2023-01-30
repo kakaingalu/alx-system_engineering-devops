@@ -49,10 +49,7 @@ File |       | Description
 [5-4_bad_luck_8_is_your_chance](./5-4_bad_luck_8_is_your_chance) | A Bash script that loops from 1 to 10 
 [6-superstitious_numbers](./6-superstitious_numbers) | A Bash script that displays numbers from 1 to 20.
 [7-clock](./7-clock) | A Bash script that displays the time for 12 hours and 59 minutes.
-[8-for_ls](./8-for_ls) | A Bash script that displays:
-		(1.) The content of the current directory 
-		(2.) In a list format 
-		(3.) Where only the part of the name after the first dash is 		         displayed (refer to the example)
+[8-for_ls](./8-for_ls) | A Bash script that displays: <br> (1.) The content of the current directory <br> (2.) In a list format <br> (3.) Where only the part of the name after the first dash is displayed (refer to the example)
 [9-to_file_or_not_to_file](./9-to_file_or_not_to_file) | A Bash script that gives you information about the school file.
 [10-fizzbuzz](./10-fizzbuzz) | A Bash script that displays numbers from 1 to 100.
 [100-read_and_cut](./100-read_and_cut) | A Bash script that displays the content of the file /etc/passwd.
