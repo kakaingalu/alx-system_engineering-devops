@@ -21,7 +21,7 @@ Introduction to loops, conditions and parsing
 <li> All your Bash script files must be executable 
 <li> You are not allowed to use awk 
 <li> Your Bash script must pass Shellcheck (version 0.7.0) without any error
-<li> The first line of all your Bash scripts should be exactly `#!/usr/bin/env bash` 
+<li> The first line of all your Bash scripts should be exactly `#!/usr/bin/env bash 
 <li> The second line of all your Bash scripts should be a comment explaining what is the script doing 
 
 # Copyright - Plagiarism
