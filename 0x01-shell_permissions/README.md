@@ -1,4 +1,4 @@
- Shell permissions
+# Shell permissions
 0. su [username] - this command is used to change current user to a specific user.
 
 1. id -un - the command prints the username of the current user.

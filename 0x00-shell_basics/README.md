@@ -1,5 +1,4 @@
-#!/bin/bash
-
+# Shell, basics
 1. pwd -A script that prints the absolute path name of the current working directory.
 
 2. ls - Displays the contents list of your current directory.

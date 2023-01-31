@@ -1,4 +1,4 @@
-Scripts and their functions
+# Scripts and their functions
 
 file 0-alias - creates an alias.
 

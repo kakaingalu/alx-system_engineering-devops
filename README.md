@@ -13,6 +13,7 @@ Directories | Description
 [0x04-loops_conditions_and_parsing](./0x04-loops_conditions_and_parsing) | Introduction loops condition and parsing.
 [0x05-processes_and_signals](./0x05-processes_and_signals) | Introduction to processes and signals
 [command_line_for_the_win](./command_line_for_the_win) | Testing of shell/bash skills.
+[0x06-regular_expressions](./0x06-regular_expressions) | Introduction to regular expressions
 # Author
 Joseph Kakai
 
