@@ -50,8 +50,8 @@ Introduction to processes and signals
 <li> For those who want to know more and learn about all signals, check out this article. </li>
 
 ## Table of contents
-Files | Description
-------|------------
+Files |  | Description
+------|--|-------------
 [0-what-is-my-pid](./0-what-is-my-pid) | A Bash script that displays its own PID.
 [1-list_your_processes](./1-list_your_processes) | A Bash script that displays a list of currently running processes.
 [2-show_your_bash_pid](./2-show_your_bash_pid) | A Bash script that displays lines containing the bash word, thus allowing you to easily get the PID of your Bash process.
@@ -63,3 +63,4 @@ Files | Description
 [8-beheaded_process](./8-beheaded_process) | A Bash script that kills the process 7-highlander.
 [100-process_and_pid_file](./100-process_and_pid_file) | A Bash script that; Creates the file <code> /var/run/myscript.pid  </code> containing its <code> PID </code> , Displays To infinity and beyond indefinitely, Displays I hate the kill command when receiving a <code> SIGTERM signal</code> , Displays <code> Y U no love me?! </code> when receiving a <code> SIGINT signal</code>, Deletes the file <code> /var/run/myscript.pid </code> and terminates itself when receiving a <code> SIGQUIT or SIGTERM signal </code>.
 [101-manage_my_process](./101-manage_my_process) |  | [manage_my_process](./manage_my_process) | Bash script that; Indefinitely writes I am alive! to the file /tmp/my_process, In between every I am alive! message, the program should pause for 2 seconds.
+[
