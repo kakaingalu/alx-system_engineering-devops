@@ -64,3 +64,9 @@ Files |  | Description
 [100-process_and_pid_file](./100-process_and_pid_file) | A Bash script that; Creates the file <code> /var/run/myscript.pid  </code> containing its <code> PID </code> , Displays To infinity and beyond indefinitely, Displays I hate the kill command when receiving a <code> SIGTERM signal</code> , Displays <code> Y U no love me?! </code> when receiving a <code> SIGINT signal</code>, Deletes the file <code> /var/run/myscript.pid </code> and terminates itself when receiving a <code> SIGQUIT or SIGTERM signal </code>.
 [101-manage_my_process](./101-manage_my_process) |  | [manage_my_process](./manage_my_process) | Bash script that; Indefinitely writes I am alive! to the file /tmp/my_process, In between every I am alive! message, the program should pause for 2 seconds.
 [102-zombie.c](./102-zombie.c) | A C program that creates 5 zombie processes.
+
+## Student name 
+Joseph Kakai
+
+## Cohort 
+9
