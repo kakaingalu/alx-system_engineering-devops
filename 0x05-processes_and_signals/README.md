@@ -1,28 +1,28 @@
-## Processes and signals
+# Processes and signals
 
-# Description
+## Description
 Introduction to processes and signals
 
-# Resources
-# Read or watch:
+## Resources
+## Read or watch:
 
 <li> Linux PID </li>
 <li> Linux process </li>
 <li> Linux signal </li>
 <li> Process management in linux </li>
-# man or help:
 
+## man or help:
 <li> ps </li>
 <li> pgrep </li>
 <li> pkill </li>
 <li> kill </li>
 <li> exit </li>
-<li>trap </li>
+<li> trap </li>
 
-# Learning Objectives
+## Learning Objectives
 <li> At the end of this project, you are expected to be able to explain to anyone, without the help of Google: </li>
 
-# General
+## General
 <li> What is a PID </li>
 <li> What is a process </li>
 <li> How to find a process PID </li>
@@ -34,8 +34,9 @@ Introduction to processes and signals
 <li> You will not be able to meet the objectives of this or any following project by copying and pasting someone elses work. </li>
 <li> You are not allowed to publish any content of this project. </li>
 <li> Any form of plagiarism is strictly forbidden and will result in removal from the program. </li>
-# Requirements
-# General
+
+## Requirements
+## General
 <li> Allowed editors: vi, vim, emacs </li>
 <li> All your files will be interpreted on Ubuntu 20.04 LTS </li>
 <li> All your files should end with a new line </li>
@@ -44,5 +45,8 @@ Introduction to processes and signals
 <li> Your Bash script must pass Shellcheck (version 0.7.0 via apt-get) without any error </li>
 <li> The first line of all your Bash scripts should be exactly #!/usr/bin/env bash </li>
 <li> The second line of all your Bash scripts should be a comment explaining what is the script doing </li>
+
 ## More Info
 <li> For those who want to know more and learn about all signals, check out this article. </li>
+
+## Table of contents
