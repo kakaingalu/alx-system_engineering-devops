@@ -50,3 +50,7 @@ Introduction to processes and signals
 <li> For those who want to know more and learn about all signals, check out this article. </li>
 
 ## Table of contents
+Files | Description
+------|------------
+
+[0-what-is-my-pid](./0-what-is-my-pid) | A Bash script that displays its own PID.
