@@ -53,4 +53,4 @@ Introduction to processes and signals
 Files | Description
 ------|------------
 [0-what-is-my-pid](./0-what-is-my-pid) | A Bash script that displays its own PID.
-[i
+[1-list_your_processes](./1-list_your_processes) | A Bash script that displays a list of currently running processes.
