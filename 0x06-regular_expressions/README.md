@@ -3,11 +3,12 @@
 ## Description
 Introduction to Regular expression
 
-Background Context
-For this project, you have to build your regular expression using Oniguruma, a regular expression library that which is used by Ruby by default. Note that other regular expression libraries sometimes have different properties.
+## Background Context
+<li> For this project, you have to build your regular expression using Oniguruma, a regular expression library that which is used by Ruby by default. Note that other regular expression libraries sometimes have different properties. </li>
 
-Because the focus of this exercise is to play with regular expressions (regex), here is the Ruby code that you should use, just replace the regexp part, meaning the code in between the //:
+<li> Because the focus of this exercise is to play with regular expressions <code> (regex) </code> , here is the Ruby code that you should use, just replace the regexp part, meaning the code in between the //: </li>
 
+<code> 
 sylvain@ubuntu$ cat example.rb
 #!/usr/bin/env ruby
 puts ARGV[0].scan(/127.0.0.[0-9]/).join
@@ -17,7 +18,8 @@ sylvain@ubuntu$ ./example.rb 127.0.0.2
 sylvain@ubuntu$ ./example.rb 127.0.0.1
 127.0.0.1
 sylvain@ubuntu$ ./example.rb 127.0.0.a
-Resources
+Resources 
+</code>
 Read or watch:
 
 Regular expressions - basics
