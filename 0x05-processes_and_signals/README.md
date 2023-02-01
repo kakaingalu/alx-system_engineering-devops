@@ -60,4 +60,6 @@ Files | Description
 [5-dont_stop_me_now](./5-dont_stop_me_now) | A Bash script that stops 4-to_infinity_and_beyond process.
 [6-stop_me_if_you_can](./6-stop_me_if_you_can) | A Bash script that stops 4-to_infinity_and_beyond process.
 [7-highlander](./7-highlander) | A Bash script that displays.
-
+[8-beheaded_process](./8-beheaded_process) | A Bash script that kills the process 7-highlander.
+[100-process_and_pid_file](./100-process_and_pid_file) | A Bash script that.
+[
