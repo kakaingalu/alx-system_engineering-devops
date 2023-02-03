@@ -74,5 +74,12 @@ Files | Description
 [1-types_of_network](./1-types_of_network) | Answers on Types of network questions.
 [2-MAC_and_IP_address](./2-MAC_and_IP_address) | Answers on MAC and IP address questions.
 [3-UDP_and_TCP](./3-UDP_and_TCP) | Answers on UDP and TCP questions.
-[ 
+[4-TCP_and_UDP_ports](./4-TCP_and_UDP_ports) | Answers on TCP and UDP ports questions.
+[5-is_the_host_on_the_network](./5-is_the_host_on_the_network) | Answers on Is the host on the network questions.
+
+## Student Name
+Joseph Kakai
+
+# Cohort
+C9
 
