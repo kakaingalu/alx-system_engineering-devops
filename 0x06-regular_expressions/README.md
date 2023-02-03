@@ -24,7 +24,7 @@ Resources
 ## Read or watch:
 
 <li> Regular expressions - basics </li>
-Regular expressions - advanced
+<li> Regular expressions - advanced </li>
 Rubular is your best friend
 Use a regular expression against a problem: now you have 2 problems
 Learn Regular Expressions with simple, interactive exercises
