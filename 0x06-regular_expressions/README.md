@@ -28,6 +28,7 @@ Resources
 <li> Rubular is your best friend </li>
 <li> Use a regular expression against a problem: now you have 2 problems </li>
 <li> Learn Regular Expressions with simple, interactive exercises </li>
+
 ## Requirements
 ## General
 <li> Allowed editors: vi, vim, emacs </li>
@@ -37,3 +38,10 @@ Resources
 <li> All your Bash script files must be executable </li>
 <li> The first line of all your Bash scripts should be exactly <code> #!/usr/bin/env ruby </code> </li>
 <li> All your regex must be built for the Oniguruma library </li>
+
+## Table of contents
+Files | Description
+------|------------
+[0-simply_match_school.rb](./0-simply_match_school.rb) | The regular expression must match School, Using the project instructions, create a Ruby script that accepts one argument and pass it to a regular expression matching method.
+
+
