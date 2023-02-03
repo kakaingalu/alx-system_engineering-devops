@@ -3,9 +3,9 @@
 <li> At the end of this project, you are expected to be able to explain to anyone, without the help of Google: </li>
 
 ## General
-<li> What is localhost/127.0.0.1 </li>
-<li> What is 0.0.0.0 </li>
-<li> What is /etc/hosts </li>
+<li> What is <code> localhost/127.0.0.1 </code>  </li>
+<li> What is <code> 0.0.0.0 </code> </li>
+<li> What is <code> /etc/hosts </code>  </li>
 <li> How to display your machines active network interfaces </li>
 
 ## Copyright - Plagiarism
