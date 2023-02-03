@@ -14,3 +14,17 @@
 ## More Info
 ## Manual QA Review
 <li> It is your responsibility to request a review for this project from a peer. If no peers have been reviewed, you should request a review from a TA or staff member. </li>
+
+## Table of Contents
+File | Description
+-----|------------
+[0-first_9_tasks.jpg](./0-first_9_tasks.jpg) | [0-first_9_tasks.png](./0-first_9_tasks.png) | Complete the first 9 tasks.
+[1-next_9_tasks.jpg](./1-next_9_tasks.jpg) | [1-next_9_tasks.png](./1-next_9_tasks.png) | Complete the 9 next tasks, getting to 18 total.
+[2-next_9_tasks.jpg](./2-next_9_tasks.jpg) | [2-next_9_tasks.png](./2-next_9_tasks.png) | Complete the 9 next tasks, getting to 27 total.
+
+
+## Student Name
+Joseph Kakai
+
+## Cohort 
+C9
