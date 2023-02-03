@@ -32,7 +32,7 @@ Resources
 ## General
 <li> Allowed editors: vi, vim, emacs </li>
 <li> All your files will be interpreted on Ubuntu 20.04 LTS </li>
-All your files should end with a new line
+<li> All your files should end with a new line </li>
 A README.md file, at the root of the folder of the project, is mandatory
 All your Bash script files must be executable
 The first line of all your Bash scripts should be exactly #!/usr/bin/env ruby
