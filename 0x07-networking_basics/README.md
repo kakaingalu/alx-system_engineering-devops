@@ -70,6 +70,7 @@ sylvain@ubuntu$
 ## Table of contents
 Files | Description
 ------|------------
-[0-OSI_model](./0-OSI_model) | Questions on OSI model.
-
+[0-OSI_model](./0-OSI_model) | Answers on OSI model questions.
+[1-types_of_network](./1-types_of_network) | Answers on Types of network questions.
+ 
 
