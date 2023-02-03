@@ -27,7 +27,7 @@ Resources
 <li> Regular expressions - advanced </li>
 <li> Rubular is your best friend </li>
 <li> Use a regular expression against a problem: now you have 2 problems </li>
-Learn Regular Expressions with simple, interactive exercises
+<li> Learn Regular Expressions with simple, interactive exercises </li>
 Requirements
 General
 Allowed editors: vi, vim, emacs
