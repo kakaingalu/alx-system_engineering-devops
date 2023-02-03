@@ -26,7 +26,7 @@ Resources
 <li> Regular expressions - basics </li>
 <li> Regular expressions - advanced </li>
 <li> Rubular is your best friend </li>
-Use a regular expression against a problem: now you have 2 problems
+<li> Use a regular expression against a problem: now you have 2 problems </li>
 Learn Regular Expressions with simple, interactive exercises
 Requirements
 General
