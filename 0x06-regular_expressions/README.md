@@ -21,9 +21,9 @@ sylvain@ubuntu$ ./example.rb 127.0.0.a
 Resources 
 </code>
 
-Read or watch:
+## Read or watch:
 
-Regular expressions - basics
+<li> Regular expressions - basics </li>
 Regular expressions - advanced
 Rubular is your best friend
 Use a regular expression against a problem: now you have 2 problems
