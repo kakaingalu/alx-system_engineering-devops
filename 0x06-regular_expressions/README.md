@@ -28,8 +28,8 @@ Resources
 <li> Rubular is your best friend </li>
 <li> Use a regular expression against a problem: now you have 2 problems </li>
 <li> Learn Regular Expressions with simple, interactive exercises </li>
-Requirements
-General
+## Requirements
+## General
 Allowed editors: vi, vim, emacs
 All your files will be interpreted on Ubuntu 20.04 LTS
 All your files should end with a new line
