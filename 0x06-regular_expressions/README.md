@@ -31,7 +31,7 @@ Resources
 ## Requirements
 ## General
 <li> Allowed editors: vi, vim, emacs </li>
-All your files will be interpreted on Ubuntu 20.04 LTS
+<li> All your files will be interpreted on Ubuntu 20.04 LTS </li>
 All your files should end with a new line
 A README.md file, at the root of the folder of the project, is mandatory
 All your Bash script files must be executable
