@@ -33,7 +33,7 @@ Resources
 <li> Allowed editors: vi, vim, emacs </li>
 <li> All your files will be interpreted on Ubuntu 20.04 LTS </li>
 <li> All your files should end with a new line </li>
-A README.md file, at the root of the folder of the project, is mandatory
-All your Bash script files must be executable
-The first line of all your Bash scripts should be exactly #!/usr/bin/env ruby
-All your regex must be built for the Oniguruma library
+<li> A README.md file, at the root of the folder of the project, is mandatory </li>
+<li> All your Bash script files must be executable </li>
+<li> The first line of all your Bash scripts should be exactly <code> #!/usr/bin/env ruby </code> </li>
+<li> All your regex must be built for the Oniguruma library </li>
