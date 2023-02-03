@@ -14,6 +14,8 @@ Directories | Description
 [0x05-processes_and_signals](./0x05-processes_and_signals) | Introduction to processes and signals
 [command_line_for_the_win](./command_line_for_the_win) | Testing of shell/bash skills.
 [0x06-regular_expressions](./0x06-regular_expressions) | Introduction to regular expressions
+[0x07-networking_basics](./0x07-networking_basics) | Introduction to networking
+[0x08-networking_basics_2](./0x08-networking_basics_2) | More into networking
 # Author
 Joseph Kakai
 
