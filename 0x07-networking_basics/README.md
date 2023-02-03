@@ -30,7 +30,7 @@ At the end of this project, you are expected to be able to explain to anyone, wi
 <li> What are the 2 mainly used data transfer protocols for IP (transfer level on the OSI schema) </li>
 <li> What is the main difference between TCP and UDP </li>
 <li> What is a port </li>
-<li> Memorize SSH, HTTP and HTTPS port numbers </li>
+<li> Memorize <code> SSH, HTTP and HTTPS </code>  port numbers </li>
 <li> What tool/protocol is often used to check if a device is connected to a network </li>
 
 ## Copyright - Plagiarism
@@ -66,4 +66,9 @@ What is the most important position in a software company?
 3
 sylvain@ubuntu$
 </code>
+
+## Table of contents
+Files | Description
+------|------------
+[
 
