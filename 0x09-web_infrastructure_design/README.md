@@ -11,7 +11,7 @@ You are not allowed to publish any content of this project.
 Any form of plagiarism is strictly forbidden and will result in removal from the program.
 ## Requirements
 ## General
-A README.md file, at the root of the folder of the project, is mandatory
+` A README.md file, at the root of the folder of the project, is mandatory
 For each task, once you are done whiteboarding (on a whiteboard, piece of paper or software or your choice), take a picture/screenshot of your diagram
 This project will be manually reviewed:
 As each task is completed, the name of that task will turn green
