@@ -16,6 +16,7 @@ Directories | Description
 [0x06-regular_expressions](./0x06-regular_expressions) | Introduction to regular expressions.
 [0x07-networking_basics](./0x07-networking_basics) | Introduction to networking.
 [0x08-networking_basics_2](./0x08-networking_basics_2) | More into networking.
+[0x09-web_infrastructure_design](./0x09-web_infrastructure_design) | Introduction to web infrastructure design.
 # Author
 Joseph Kakai
 
