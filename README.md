@@ -1,7 +1,10 @@
-## Alx system engineering devops
+# Alx system engineering devops
 
-# Description
-The folder concerns all shell projects 
+
+## Description
+
+## The folder concerns all shell projects 
+
 
 # Table of contents 
 Directories | Description
