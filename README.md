@@ -3,7 +3,7 @@
 
 ## Description.
 
-## The folder concerns all shell projects 
+## The folder concerns all shell projects.
 
 
 # Table of contents 
