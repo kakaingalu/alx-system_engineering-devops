@@ -1,7 +1,7 @@
 # Define a file resource for /tmp/school
 file { '/tmp/school':
   # Ensure that the file exists and has the specified properties
-  ensure  => file,
+  ensure  => 'file',
   # Set the file contents to "I love puppet"
   content => 'I love puppet',
   # Set the file owner to www-data
