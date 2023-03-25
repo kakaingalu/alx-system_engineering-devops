@@ -8,10 +8,10 @@ file { '/root/.ssh/config':
 
 file_line { 'Turn off passwd auth':
   path   => '/etc/ssh/ssh_config',
-  line   => '\tPasswordAuthentication no',
+  line   => '    PasswordAuthentication no',
 }
 
 file_line { 'Declare identity file':
   path   => '/etc/ssh/ssh_config',
-  line   => '\tIdentityFile ~/.ssh/school',
+  line   => '    IdentityFile ~/.ssh/school',
 }
