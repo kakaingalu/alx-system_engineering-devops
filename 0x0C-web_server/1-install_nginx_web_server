@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+# This script installs and configures an nginx web server on an Ubuntu machine.
+
+# Update the package list
+sudo apt-get update
+
+# Install nginx web server
+sudo apt-get -y install nginx
+
+# Create default index file
+echo "Hello World!" | sudo tee /var/www/html/index.html
+
+# Start nginx web server
+sudo service nginx start
+
