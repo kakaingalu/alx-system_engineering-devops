@@ -3,6 +3,6 @@
 # This script installs and configures an nginx web server on an Ubuntu machine.
 apt-get update
 apt-get -y install nginx
-echo "Hello World!" |tee /var/www/html/index.html
+echo "Hello World!" > /var/www/html/index.html
 service nginx start
 service nginx restart
