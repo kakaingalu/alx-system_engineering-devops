@@ -1,20 +1,8 @@
 #!/usr/bin/env bash
-# This script installs and configures an nginx web server on an Ubuntu machine
+# This script installs and configures an nginx web server on an Ubuntu machine.
 
-sudo apt-get update
-
-sudo apt-get -y install nginx
-
-sudo service nginx start
-
-sudo ufw allow 'Nginx HTTP'
-
-sudo bash -c 'echo "server {
-    listen 80;
-    location / {
-        echo \"Hello World!\";
-    }
-}" > /etc/nginx/sites-available/default'
-
-sudo service nginx restart
-
+apt-get update
+apt-get -y install nginx
+ufw allow 'Nginx HTTP'
+echo "Hello World!" > /var/www/html/index.html
+service nginx start
