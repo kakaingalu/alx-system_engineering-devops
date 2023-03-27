@@ -8,6 +8,9 @@ sudo apt-get update
 # Install nginx web server
 sudo apt-get -y install nginx
 
+# allow incoming HTTP traffic
+sudo ufw allow 'Nginx HTTP'
+
 # Create default index file
 echo "Hello World!" | sudo tee /var/www/html/index.html
 
