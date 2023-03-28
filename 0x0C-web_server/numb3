@@ -1,0 +1,15 @@
+#!/usr/bin/bash
+
+# install nginx
+sudo apt-get update
+sudo apt-get install nginx -y
+
+# create a backup of the default nginx config file
+sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/default.bak
+
+# redirect /redirect_me to the desired URL with a 301 Moved Permanently status code
+sudo sed -i 's/\(location \/ {\)/\1\n        location \/redirect_me {\n            return 301 https:\/\/www.youtube.com\/watch?v=QH2-TGUlwu4;\n        }/' /etc/nginx/sites-available/default
+
+# reload the nginx configuration
+sudo service nginx start
+
