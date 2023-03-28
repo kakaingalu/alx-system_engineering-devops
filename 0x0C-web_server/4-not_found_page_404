@@ -7,13 +7,11 @@ sudo apt-get install -y nginx
 
 # Replace the default Nginx configuration with our custom configuration
 echo "Hello World!" | sudo tee /var/www/html/index.html
-sudo sed -i 's|server_name _;|server_name wantonblack.tech;\n\n    location /redirect_me {\n        return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n    }\n\n    # ...|g' /etc/nginx/sites-available/default
+sudo sed -i 's|server_name _;|server_name wantonblack.tech;\n\n    location /redirect_me {\n        return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n    }\n\n    |g' /etc/nginx/sites-available/default
 
 # Create a custom 404 page
 echo "Ceci n'est pas une page" | sudo tee /var/www/html/custom_404.html
 
 # Configure Nginx to use the custom 404 page
 sudo sed -i '/server_name _;/a \        error_page 404 /custom_404.html;\n        location = /custom_404.html {\n                internal;\n        }' /etc/nginx/sites-available/default
-
-# restart the server
 sudo service nginx restart
