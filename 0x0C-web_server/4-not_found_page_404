@@ -1,9 +1,4 @@
 #!/usr/bin/env bash
-# Install Nginx
-sudo apt-get update
-sudo apt-get install nginx -y
-# create a hello world page
-echo "Hello World!" | sudo tee /var/www/html/index.html
 # create a redirection for our website
 sudo sed -i '/server_name wantonblack.tech;/a \	location /redirect_me {\n		return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n	}' /etc/nginx/sites-available/default
 # Create a custom 404 page
