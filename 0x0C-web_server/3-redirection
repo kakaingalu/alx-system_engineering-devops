@@ -1,14 +1,15 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
 
-# Install Nginx web server
-sudo apt-get update && sudo apt-get -y install nginx
+# install nginx
+sudo apt-get update
+sudo apt-get install nginx -y
 
-# Create a default web page
-echo "Hello World!" | sudo tee /var/www/html/index.html
+# create a backup of the default nginx config file
+sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/default.bak
 
-# Set up 301 redirection for /redirect_me
-sudo sed -i 's/server_name _;/&\n\trewrite /redirect_me https:\/\/www.youtube.com\/watch?v=QH2-TGUlwu4 permanent;/' /etc/nginx/sites-available/default
+# redirect /redirect_me to the desired URL with a 301 Moved Permanently status code
+sudo sed -i 's/\(location \/ {\)/\1\n        location \/redirect_me {\n            return 301 https:\/\/www.youtube.com\/watch?v=QH2-TGUlwu4;\n        }/' /etc/nginx/sites-available/default
 
-# Restart Nginx to apply the changes
-sudo systemctl restart nginx
+# reload the nginx configuration
+sudo service nginx start
 
