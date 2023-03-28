@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
-# Replace the default Nginx configuration with our custom configuration
-echo "Hello World!" | sudo tee /var/www/html/index.html
-sudo sed -i 's|server_name _;|server_name wantonblack.tech;\n\n    location /redirect_me {\n        return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n    }\n\n    # ...|g' /etc/nginx/sites-available/default
-# Restart Nginx to apply the changes
+# script i used to install nginx on my local web server
+sudo apt-get -y update
+sudo apt-get -y install nginx
+echo "Hello World" | sudo tee /usr/share/nginx/html/index.html
+replacement="location /redirect_me {\nrewrite ^/.*$ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;\n}\n"
+sudo sed -i "/# Only for/ i $replacement" /etc/nginx/sites-available/default
 sudo service nginx restart
