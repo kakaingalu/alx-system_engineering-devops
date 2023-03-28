@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 # Install Nginx
+
 sudo apt-get update
 sudo apt-get install nginx -y
 
@@ -13,5 +14,5 @@ sudo sed -i '/server_name wantonblack.tech;/a \	location /redirect_me {\n		retur
 echo "Ceci n'est pas une page" | sudo tee /var/www/html/custom_404.html
 
 # Configure Nginx to use the custom 404 page
-sudo sed -i '/server_name _;/a \        error_page 404 /custom_404.html;\n        location = /custom_404.html {\n                internal;\n        }' /etc/nginx/sites-available/default
-sudo service nginx restart
+sudo sed -i '/server_name wantonblack.tech;/a \        error_page 404 /custom_404.html;\n        location = /custom_404.html {\n                internal;\n        }' /etc/nginx/sites-available/default
+sudo service nginx start
