@@ -1,8 +1,13 @@
 #!/usr/bin/env bash
-# script i used to install nginx on my local web server
+# Configure a new Nginx server so that /redirect_me is redirecting to another page.
+# The redirection must be a “301 Moved Permanently”
+
 sudo apt-get -y update
+sudo apt-get -y upgrade
 sudo apt-get -y install nginx
-echo "Hello World" | sudo tee /usr/share/nginx/html/index.html
-replacement="location /redirect_me {\nrewrite ^/.*$ https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;\n}\n"
-sudo sed -i "/# Only for/ i $replacement" /etc/nginx/sites-available/default
+sudo service nginx start
+new_string="\\\trewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;"
+sudo sed -i "54i $new_string" /etc/nginx/sites-available/default
 sudo service nginx restart
+sudo service nginx reload
+
