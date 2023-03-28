@@ -1,20 +1,12 @@
-#!/usr/bin/env bash
+i#!/bin/bash
+
 # Install Nginx web server
 sudo apt-get update
-sudo apt-get -y install nginx
+sudo apt-get install -y nginx
 
-# Create a default web page
-echo "Hello World!" | sudo tee /var/www/html/index.html
-
-# Set up 301 redirection for /redirect_me
-ADD301_REDIRECT="
-    location /redirect_me {
-        return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
-    }
-"
-
-# Add the 301 redirection to the end of the default Nginx configuration
-sudo bash -c "echo '$ADD301_REDIRECT' >> /etc/nginx/sites-available/default"
+# Replace the default Nginx configuration with our custom configuration
+sudo sed -i 's|server_name _;|server_name wantonblack.tech;\n\n    location /redirect_me {\n        return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n    }\n\n    # ...|g' /etc/nginx/sites-available/default
 
 # Restart Nginx to apply the changes
 sudo service nginx restart
+
