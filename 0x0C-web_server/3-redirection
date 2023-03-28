@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-# create a backup of the default nginx config file
-sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/default.bak
-# Replace the default Nginx configuration with our custom configuration
-sudo sed -i 's|server_name _;|server_name wantonblack.tech;\n\n    location /redirect_me {\n        return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n    }\n\n    # ...|g' /etc/nginx/sites-available/default
-# Restart Nginx to apply the changes
-sudo service nginx restart
+#Editing the default config file
+
+sudo sed -i '/server_name _;/a \	location /redirect_me {\n		return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;\n	}' /etc/nginx/sites-available/default
+sudo service ngnix restart
