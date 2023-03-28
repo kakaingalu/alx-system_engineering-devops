@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # Replace the default Nginx configuration with our custom configuration
-
 # Install Nginx
 sudo apt-get update
 sudo apt-get install -y nginx
