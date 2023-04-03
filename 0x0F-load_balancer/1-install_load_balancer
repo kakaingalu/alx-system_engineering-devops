@@ -1,0 +1,27 @@
+#!/usr/bin/env bash
+
+# Install HAProxy
+sudo apt-get update
+sudo apt-get install haproxy -y
+
+# Get the hostnames of web-01 and web-02 servers
+HOSTNAME1=54.144.221.234
+HOSTNAME2=100.26.154.245
+
+# Configure HAProxy
+sudo sed -i 's/ENABLED=0/ENABLED=1/' /etc/default/haproxy
+
+echo "frontend wantonblack-frontend
+    bind *:80
+    mode http
+    default_backend wantonblack-backend
+
+backend wantonblack-backend
+    mode http
+    balance roundrobin
+    server web-01 $HOSTNAME1:80 check
+    server web-02 $HOSTNAME2:80 check" | sudo tee /etc/haproxy/haproxy.cfg > /dev/null
+
+# Restart HAProxy
+sudo service haproxy restart
+
