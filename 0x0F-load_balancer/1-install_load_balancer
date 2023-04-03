@@ -4,27 +4,12 @@
 sudo apt-get update
 sudo apt-get install haproxy -y
 
-# Get the hostnames of web-01 and web-02 servers
-HOSTNAME1=54.144.221.234
-HOSTNAME2=100.26.154.245
-
 # Manage haproxy by using init.d
 sudo /etc/init.d/haproxy start
 
 # Configure HAProxy
-sed 's/^[ \t]*//' << EOF | sudo tee -a /etc/haproxy/haproxy.cfg
-backend 1b-01
-    balance roundrobin
-    mode http
-    server web-01 $HOSTNAME:80 check
-    server web-02 $HOSTNAME:80 check
-frontend http
-    bind *:80
-    mode http
-    use_backend 1b-01
-EOF
-
-
+sudo sed -i '$ a\\nbackend lb-01\n\tbalance roundrobin\n\tmode http\n\tserver web-01 52.87.215.121:80 check\n\tserver web-02 54.160.79.52:80 check\n\
+frontend http\n\tbind *:80\n\tmode http\n\n\tuse_backend lb-01' /etc/haproxy/haproxy.cfg
 
 # Restart HAProxy
 sudo haproxy -f /etc/haproxy/haproxy.cfg
