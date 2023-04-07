@@ -1,29 +1,17 @@
-#!/usr/bin/env bash
+#!/bin/usr/env bash
+# a Bash script that will display information about subdomains.
 
-# Function to display usage information
-function usage {
-    echo "Usage: $0 domain [subdomain]"
-    echo "Example: $0 wantonblack.tech web-02"
+config () {
+	$(dig '$2'.'$1' | grep -A1 'ANSWER SECTION:' | tr \t \n | tail -2 | tr '\n' ' ' | awk '{print "The subdomain "$1" is a "$2" record and points to " $3}'
 }
 
-# Check if the domain parameter is provided
-if [ -z "$1" ]; then
-    usage
-    exit 1
+if [ "$#" -eq 1 ]
+then
+  dns_config "$1" "www"
+  dns_config "$1" "lb-01"
+  dns_config "$1" "web-01"
+  dns_config "$1" "web-02"
+elif [ "$#" -eq 2 ]
+then
+  dns_config "$1" "$2"
 fi
-
-# Default subdomains
-subdomains=("www" "lb-01" "web-01" "web-02")
-
-# Check if a specific subdomain is provided
-if [ -n "$2" ]; then
-    subdomains=("$2")
-fi
-
-# Loop through subdomains and display information
-for subdomain in "${subdomains[@]}"; do
-    record=$(dig "$subdomain.$1" | awk '/^;; ANSWER SECTION:/{flag=1;next}/^$/{flag=0}flag' | awk '{print $1}')
-    destination=$(dig "$subdomain.$1" | awk '/^;; ANSWER SECTION:/{flag=1;next}/^$/{flag=0}flag' | awk '{print $NF}')
-    echo "The subdomain $subdomain is a $record record and points to $destination"
-done
-
