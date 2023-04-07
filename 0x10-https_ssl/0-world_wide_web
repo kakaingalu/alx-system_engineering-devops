@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+
+# Function to display usage information
+function usage {
+    echo "Usage: $0 domain [subdomain]"
+    echo "Example: $0 wantonblack.tech web-02"
+}
+
+# Check if the domain parameter is provided
+if [ -z "$1" ]; then
+    usage
+    exit 1
+fi
+
+# Default subdomains
+subdomains=("www" "lb-01" "web-01" "web-02")
+
+# Check if a specific subdomain is provided
+if [ -n "$2" ]; then
+    subdomains=("$2")
+fi
+
+# Loop through subdomains and display information
+for subdomain in "${subdomains[@]}"; do
+    record=$(dig "$subdomain.$1" | awk '/^;; ANSWER SECTION:/{flag=1;next}/^$/{flag=0}flag' | awk '{print $1}')
+    destination=$(dig "$subdomain.$1" | awk '/^;; ANSWER SECTION:/{flag=1;next}/^$/{flag=0}flag' | awk '{print $NF}')
+    echo "The subdomain $subdomain is a $record record and points to $destination"
+done
+
