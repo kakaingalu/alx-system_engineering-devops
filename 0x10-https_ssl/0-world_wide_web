@@ -1,8 +1,8 @@
-#!/bin/usr/env bash
+#!/usr/bin/env bash
 # a Bash script that will display information about subdomains.
 
 config () {
-	$(dig '$2'.'$1' | grep -A1 'ANSWER SECTION:' | tr \t \n | tail -2 | tr '\n' ' ' | awk '{print "The subdomain "$1" is a "$2" record and points to " $3}'
+	$(dig "$2"."$1" | grep -A1 'ANSWER SECTION:' | tr '\t' '\n' | tail -2 | tr '\n' ' ') | awk '{print "The subdomain " $1 " is a " $2 " record and points to " $3}'
 }
 
 if [ "$#" -eq 1 ]
