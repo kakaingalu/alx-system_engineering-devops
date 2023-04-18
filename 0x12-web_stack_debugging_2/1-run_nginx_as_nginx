@@ -3,8 +3,8 @@
 # nginx must be running as nginx user
 # nginx must be listening on all active IPs on port 8080
 # You cannot use apt-get remove
-sed -i "s/#user www-data/user nginx/" /etc/nginx/nginx.conf
-sed -i "s/80/8080/g" /etc/nginx/sites-available/default
-chmod 644 /etc/nginx/nginx.conf
-pkill apache2
+sudo awk '{sub(/#user www-data/,"user nginx")}1' /etc/nginx/nginx.conf > tmpsudo mv tmp /etc/nginx/nginx.conf
+sudo awk '{gsub(/80/,"8080")}1' /etc/nginx/sites-available/default > tmp 
+sudo mv tmp /etc/nginx/sites-available/default
+sudo pkill apache2
 sudo service nginx restart
