@@ -1,41 +1,47 @@
 #!/usr/bin/python3
-"""This module returns information about employee's TODO list progress"""
+"""
+This script accesses a REST API to retrieve information\
+ about an employee's TODO list,
+including their name and the tasks they have completed.
+"""
 
 import requests
 import sys
 
-if __name__ == "__main__":
+
+if __name__ == '__main__':
     # Retrieve the employee ID from the command line arguments
     employee_id = sys.argv[1]
 
-    # Create the URL to retrieve the TODO list for the
-    # employee with the given ID
-    url = "https://jsonplaceholder.typicode.com/todos"
-    params = {"userId": employee_id}
-    response = requests.get(url, params=params)
+    # Build the URL to retrieve the employee's name
+    base_url = "https://jsonplaceholder.typicode.com/users"
+    name_url = f"{base_url}/{employee_id}"
 
-    # If the request was successful (status code 200),
-    # extract the completed tasks
-    if response.status_code == 200:
-        todos = response.json()
-        completed = []
-        for todo in todos:
-            if todo["completed"]:
-                completed.append(todo["title"])
+    # Send a GET request to retrieve the employee's name
+    name_response = requests.get(name_url)
+    employee_name = name_response.json().get('name')
 
-        # Retrieve the employee name from the API and calculate task statistics
-        employee_name = (
-            requests.get("https://jsonplaceholder.typicode.com/users/{}"
-                         .format(employee_id)).json()["name"]
-        )
-        total_tasks = len(todos)
-        num_completed = len(completed)
+    # Build the URL to retrieve the employee's tasks
+    todo_url = f"{name_url}/todos"
 
-        # Print the task statistics and list of completed tasks
-        print("Employee {} is done with tasks({}/{}):"
-              .format(employee_name, num_completed, total_tasks))
-        for task in completed:
-            print("\t {}".format(task))
-    else:
-        # If the request was unsuccessful, print an error message
-        print("User not found")
+    # Send a GET request to retrieve the employee's tasks
+    tasks_response = requests.get(todo_url)
+    tasks = tasks_response.json()
+
+    # Count the number of tasks that have been completed
+    # and store them in a list
+    num_done = 0
+    done_tasks = []
+    for task in tasks:
+        if task.get('completed'):
+            done_tasks.append(task)
+            num_done += 1
+
+    # Print the employee's name and the number of tasks they have completed
+    total_tasks = len(tasks)
+    print("Employee {} is done with tasks({}/{}):"
+          .format(employee_name, num_done, total_tasks))
+
+    # Print the titles of the completed tasks
+    for task in done_tasks:
+        print("\t {}".format(task.get('title')))
