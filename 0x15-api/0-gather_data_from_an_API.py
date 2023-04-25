@@ -1,21 +1,20 @@
 #!/usr/bin/python3
+
 """
-This script accesses a REST API to retrieve information\
- about an employee's TODO list,
-including their name and the tasks they have completed.
+This script retrieves an employee's name and
+tasks from the JSONPlaceholder API.
 """
 
 import requests
 import sys
 
-
 if __name__ == '__main__':
-    # Retrieve the employee ID from the command line arguments
-    employee_id = int(sys.argv[1])
+    # Get the employee ID from the command line argument.
+    employee_ID = int(sys.argv[1])
 
     # Construct the URL to retrieve the employee's information.
     user_url = 'https://jsonplaceholder.typicode.com/users/{}'.format(
-        employee_id)
+        employee_ID)
 
     # Make a request to the API and convert the response to a JSON object.
     response = requests.get(user_url)
@@ -26,7 +25,7 @@ if __name__ == '__main__':
 
     # Construct the URL to retrieve the employee's tasks.
     todo_url = 'https://jsonplaceholder.typicode.com/todos?userId={}'.format(
-        employee_id)
+        employee_ID)
 
     # Make a request to the API and convert the response to a JSON object.
     todo_json = requests.get(todo_url).json()
