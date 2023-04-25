@@ -11,7 +11,7 @@ import sys
 
 if __name__ == '__main__':
     # Retrieve the employee ID from the command line arguments
-    employee_id = sys.argv[1]
+    employee_id = int(sys.argv[1])
 
     # Construct the URL to retrieve the employee's information.
     user_url = 'https://jsonplaceholder.typicode.com/users/{}'.format(
