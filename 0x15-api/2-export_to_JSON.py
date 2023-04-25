@@ -7,15 +7,11 @@ import json
 from sys import argv
 
 
-def employee_todo_progress():
-    """function that returns information about an
-       employee's TODO list progress
-    """
+if __name__ == "__main__":
     response = requests.get('https://jsonplaceholder.typicode.com/todos?',
                             params={'userId': argv[1]})
     if response.status_code != 200:
         print(f"Error: {response.status_code}")
-        return
     todos = response.json()
     completed_tasks = []
     for todo in todos:
@@ -42,7 +38,3 @@ def employee_todo_progress():
         json.dump(data, f)
 
     print(f"JSON file {file_name} has been created successfully.")
-
-
-if __name__ == "__main__":
-    employee_todo_progress()
