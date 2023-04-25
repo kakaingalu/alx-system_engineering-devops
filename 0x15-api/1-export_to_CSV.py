@@ -5,6 +5,7 @@ from sys import argv
 import csv
 import requests
 
+
 def employee_todo_progress():
     # Make an HTTP GET request to retrieve the employee's
     # to-do list from the REST API
