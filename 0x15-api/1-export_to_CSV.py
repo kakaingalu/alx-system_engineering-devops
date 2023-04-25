@@ -31,8 +31,6 @@ def employee_todo_progress():
     # with the appropriate settings
     with open(file_name, mode='w', newline='') as file:
         writer = csv.writer(file,
-                            delimiter=',',
-                            quotechar='"',
                             quoting=csv.QUOTE_ALL
                             )
 
