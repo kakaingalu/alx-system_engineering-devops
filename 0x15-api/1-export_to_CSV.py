@@ -1,10 +1,9 @@
 #!/usr/bin/python3
 """This module exports a TODO list progress of an employee to CSV format"""
 
-import requests
-import csv
 from sys import argv
-
+import csv
+import requests
 
 def employee_todo_progress():
     # Make an HTTP GET request to retrieve the employee's
