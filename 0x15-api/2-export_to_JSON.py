@@ -8,44 +8,40 @@ from sys import argv
 
 
 if __name__ == "__main__":
-    """Get data from API"""
-    response = requests.get('https://jsonplaceholder.typicode.com/todos?',
-                            params={'userId': argv[1]})
-    """Check for errors"""
-    if response.status_code != 200:
-        print(f"Error: {response.status_code}")
 
-    """Parse data"""
-    todos = response.json()
-    completed_tasks = []
+    # intialization of the userid from terminal
+    user_id = argv[1]
 
-    """Extract completed tasks"""
+    # get information of user from the api
+    user_url = 'https://jsonplaceholder.typicode.com/users/{}'
+    request = requests.get(user_url.format(user_id)).json()
+
+    # extract username
+    user_name = request.get('username')
+
+    # get information of todo list of users from api
+    todos_url = "https://jsonplaceholder.typicode.com/todos?userId={}"
+    todos = requests.get(todos_url.format(user_id)).json()
+
+    # Json file name defination
+    file_name = user_id + ".json"
+
+    # create list to store tasks
+    task_lists = []
+
+    # loop through todo assigning the title, completed and username of tasks
+    # into the task_lists
     for todo in todos:
-        if todo['completed']:
-            completed_tasks.append(todo)
+        copy_dict = {}
+        copy_dict["task"] = todo.get('title')
+        copy_dict["completed"] = todo.get('completed')
+        copy_dict["username"] = user_name
+        task_lists.append(copy_dict)
 
-    user_id = todos[0]['userId']
-    tasks = []
+    # store the list into a dictonary with key = user_id
+    dict_name = {}
+    dict_name[user_id] = task_lists
 
-    """Get username"""
-    username = requests.get('https://jsonplaceholder.typicode.com/users',
-                            params={'id': user_id}).json()[0]['username']
-
-    """Prepare data for JSON file"""
-    for todo in todos:
-        tasks.append({
-            "task": todo['title'],
-            "completed": todo['completed'],
-            "username": username
-        })
-
-    data = {
-        str(user_id): tasks
-    }
-
-    """Write data to JSON file"""
-    file_name = f"{user_id}.json"
-    with open(file_name, "w") as f:
-        json.dump(data, f)
-
-    print(f"JSON file {file_name} has been created successfully.")
+    # write to json file
+    with open(file_name, "w") as j_file:
+        json.dump(dict_name, j_file)
