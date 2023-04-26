@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""fetches data from api inform of json"""
+"""script to export data in the JSON format."""
 
 import json
 import requests
