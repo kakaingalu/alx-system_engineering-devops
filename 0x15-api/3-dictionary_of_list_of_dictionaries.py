@@ -1,9 +1,9 @@
 #!/usr/bin/python3
+
 """This module returns information about employee's TODO list progress"""
 
 import json
 import requests
-
 
 # check if this is main program
 if __name__ == "__main__":
@@ -20,6 +20,7 @@ if __name__ == "__main__":
 
     # loop through users_dict
     for data in users_dict:
+       
         # get infomation on user's name
         user_name = data.get("username")
 
