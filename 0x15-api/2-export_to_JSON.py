@@ -2,8 +2,8 @@
 """script to export data in the JSON format."""
 
 import csv
-import requests
 import json
+import requests
 from sys import argv
 
 
