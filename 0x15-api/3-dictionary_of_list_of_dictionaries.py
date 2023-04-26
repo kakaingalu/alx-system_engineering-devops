@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-"""This module returns information about employee's TODO list progress"""
+"""fetches data from api inform of json"""
 
 import json
 import requests
