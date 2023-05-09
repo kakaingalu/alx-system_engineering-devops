@@ -15,7 +15,7 @@ def recurse(subreddit, hot_list=[]):
     global after
     head = {"User-Agent": "Version 1.51.110 Chromium: 113.0.5672.77"}
     Url = "https://www.reddit.com/r/{}/hot.json".format(subreddit)
-    afta = {'after': after}
+    afta = {'limit': 100 'after': after}
     response = get(Url, headers=head, params=afta, allow_redirects=False)
     if response.status_code == 200:
         posts = response.json()
