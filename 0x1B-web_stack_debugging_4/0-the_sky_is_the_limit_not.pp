@@ -1,6 +1,6 @@
-# increase amount of traffic on nginx
+# increase amount of traffic on nginx by
+# editing the nginx file in etc/default directory
 
-# edit the nginx file in etc/default directory
 exec { 'edit-nginx-file':
   command => 'sed -i "s/15/10000/" /etc/default/nginx',
   path    => '/usr/local/bin/:/bin/'
@@ -8,6 +8,6 @@ exec { 'edit-nginx-file':
 
 # reload nginx 
 exec { 'reload-nginx':
-  command => '/usr/sbin/service nginx restart',
-  path    => '/usr/sbin:/usr/bin:/sbin:/bin',
+  command => 'nginx restart',
+  path    => '/etc/init.d/'
 }
